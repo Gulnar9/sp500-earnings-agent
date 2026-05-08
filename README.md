@@ -165,41 +165,46 @@ rm -rf cache/
 ## Example Output
 
 ```
-**Company:** Apple Inc. (AAPL)
+================================== Ai Message ==================================
 
-**Quarterly Report:**
-| reportDate | fiscalDate | epsActual | epsEstimate | surprise | surprisePercent |
-|---|---|---|---|---|---|
-| 2026-01-30 | 2025-12-31 | 2.40 | 2.35 | 0.05 | 2.13% |
-| ...        | ...        | ...  | ...  | ...  | ...   |
+**Company:** Apple Inc. (AAPL)  
+**Quarterly report:**  
 
-**Earnings Date:** 2026-04-30
+| Report Date | Fiscal Date | EPS Actual | EPS Estimate | Surprise | Surprise % |
+|-------------|-------------|------------|--------------|----------|------------|
+| 2026-04-30  | 2026-03-31  | 2.01       | 1.94         | 0.07     | 3.6082     |
+| 2026-01-29  | 2025-12-31  | 2.84       | 2.67         | 0.17     | 6.367      |
+| 2025-10-30  | 2025-09-30  | 1.85       | 1.77         | 0.08     | 4.5198     |
+| 2025-07-31  | 2025-06-30  | 1.57       | 1.43         | 0.14     | 9.7902     |
+| 2025-05-01  | 2025-03-31  | 1.65       | 1.62         | 0.03     | 1.8519     |
+| 2025-01-30  | 2024-12-31  | 2.4        | 2.34         | 0.06     | 2.5641     |
+| 2024-10-31  | 2024-09-30  | 0.97       | 0.95         | 0.02     | 2.1053     |
+| 2024-08-01  | 2024-06-30  | 1.4        | 1.34         | 0.06     | 4.4776     |
+
+**Earnings Date:** 2026-04-30  
 **Signal:** STRONG
 
-**Pattern Summary**
-Apple has beaten EPS estimates in 7 of the last 8 quarters...
+**Pattern Summary**  
+Apple Inc. has demonstrated a consistent ability to surpass earnings expectations over the past eight quarters, maintaining a consecutive beat streak. The average earnings surprise for these periods reflects a commendable capacity to outpace analyst estimates, contributing to a high surprise consistency score of 1.788. This robust performance indicates a strong handle on forecast alignment and execution.
 
-**Price Behavior**
-Pre-earnings drift of +2.3% over the last 5 trading days suggests...
+**Price Behavior**  
+In the 10 days prior to earnings, Apple has experienced a 1.207% price drift, indicating a marginal positive shift in investor sentiment leading up to results. Interestingly, volatility is slightly higher pre-earnings at 1.208%, suggesting heightened investor activity and anticipation ahead of the earnings report. Last quarter’s EPS beat of $0.07 above the consensus was a continuation of this trend, reinforcing positive investor sentiment.
 
 **Key Risk Factors**
-- Slowing iPhone upgrade cycle in mature markets
-- Exposure to US-China trade policy uncertainty
+- Potential regulatory challenges impacting revenue streams or operational efficiency.
+- Market saturation in key segments such as smartphones and personal computing devices.
+
 
 **News Sentiment**
-Recent coverage is broadly positive, with analyst commentary focused on services revenue growth...
+Recent sentiment around Apple's market performance remains generally neutral with articles discussing broader market movements and institutional reactions in related firms, rather than direct focus on Apple itself.
 
 **What to Watch**
-Monitor services revenue growth guidance — this has been the primary driver of post-earnings price reaction in recent quarters.
-```
-
+Keep an eye on Apple's Services revenue growth rate, as it serves as a critical indicator of the company's ability to expand its ecosystem beyond hardware sales.
 ---
 
 ## Limitations
 
-- Free Alpha Vantage tier limits per day
 - Signal score weights are assumption-based, not derived from historical behaviour
-- Pre-earnings drift uses the last reported earnings date, not the upcoming one
-- News sentiment is passed as raw feed data — no dedicated NLP scoring model
+- Currently pre-earnings drift uses the last reported earnings date, not the upcoming one
 
 

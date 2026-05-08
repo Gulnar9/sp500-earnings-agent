@@ -146,22 +146,6 @@ python fin_agent.py
 
 ---
 
-## API Rate Limits
-
-Alpha Vantage free tier allows **25 requests per day**. The agent uses local disk caching to avoid redundant API calls during development — cached responses are stored in `cache/` and reused on subsequent runs.
-
-To clear the cache and fetch fresh data:
-
-```bash
-# Windows
-Remove-Item -Recurse -Force cache
-
-# Mac/Linux
-rm -rf cache/
-```
-
----
-
 ## Example Output
 
 ```
@@ -200,9 +184,25 @@ Recent sentiment around Apple's market performance remains generally neutral wit
 
 **What to Watch**
 Keep an eye on Apple's Services revenue growth rate, as it serves as a critical indicator of the company's ability to expand its ecosystem beyond hardware sales.
+```
 ---
 
-## Limitations
+## API Rate Limits
+
+Alpha Vantage free tier allows **25 requests per day**. The agent uses local disk caching to avoid redundant API calls during development — cached responses are stored in `cache/` and reused on subsequent runs.
+
+To clear the cache and fetch fresh data:
+
+```bash
+# Windows
+Remove-Item -Recurse -Force cache
+
+# Mac/Linux
+rm -rf cache/
+```
+
+---
+## Guardrails 
 
 - Signal score weights are assumption-based, not derived from historical behaviour
 - Currently pre-earnings drift uses the last reported earnings date, not the upcoming one

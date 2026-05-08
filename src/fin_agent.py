@@ -15,11 +15,11 @@ from langgraph.graph import StateGraph, END
 from IPython.display import Image, display
 
 
-load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 ALPHA_API_KEY = os.environ["ALPHA_API_KEY"]
-
 
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages] 

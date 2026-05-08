@@ -14,7 +14,7 @@ from langgraph.graph.message import add_messages
 from langgraph.graph import StateGraph, END
 from IPython.display import Image, display
 
-
+# import the keys from .env file
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / ".env")
 

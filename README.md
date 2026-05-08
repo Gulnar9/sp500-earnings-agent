@@ -184,6 +184,9 @@ Recent sentiment around Apple's market performance remains generally neutral wit
 
 **What to Watch**
 Keep an eye on Apple's Services revenue growth rate, as it serves as a critical indicator of the company's ability to expand its ecosystem beyond hardware sales.
+
+<img width="160" height="456" alt="image" src="https://github.com/user-attachments/assets/6f8d8e4c-3f62-4082-a568-65f32759d9c9" />
+
 ```
 ---
 
